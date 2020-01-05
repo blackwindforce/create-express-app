@@ -1,0 +1,116 @@
+{
+  "name": "create-express-app",
+  "version": "1.0.0",
+  "description": "create-express-app",
+  "keywords": [
+    "commitizen",
+    "eslint",
+    "express",
+    "husky",
+    "jest",
+    "lint-staged",
+    "prettier"
+  ],
+  "homepage": "https://github.com/blackwindforce/create-express-app#readme",
+  "bugs": {
+    "url": "https://github.com/blackwindforce/create-express-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackwindforce/create-express-app.git"
+  },
+  "license": "MIT",
+  "author": "Akira Tsai",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "jest"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.md": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "commonjs": true,
+      "es2020": true,
+      "jest/globals": true,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "jest"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "standard",
+      "plugin:jest/recommended"
+    ]
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "endOfLine": "lf",
+    "htmlWhitespaceSensitivity": "css",
+    "printWidth": 80,
+    "proseWrap": "preserve",
+    "quoteProps": "as-needed",
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "useTabs": false
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "jest": {
+    "coverageDirectory": "coverage",
+    "restoreMocks": true,
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jest": "^23.3.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1"
+  },
+  "engines": {
+    "node": "12",
+    "npm": "6"
+  }
+}
