@@ -44,31 +44,10 @@
       "prettier --write"
     ]
   },
-  "eslintConfig": {
-    "env": {
-      "commonjs": true,
-      "es2020": true,
-      "jest": true,
-      "node": true
-    },
-    "parserOptions": {
-      "ecmaFeatures": {
-        "globalReturn": false,
-        "impliedStrict": true,
-        "jsx": false
-      },
-      "ecmaVersion": 2020,
-      "sourceType": "module"
-    },
-    "plugins": [
-      "jest"
-    ],
-    "extends": [
-      "eslint:recommended",
-      "standard",
-      "plugin:jest/recommended",
-      "plugin:prettier/recommended"
-    ]
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "prettier": {
     "arrowParens": "avoid",
@@ -84,10 +63,41 @@
     "trailingComma": "none",
     "useTabs": false
   },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
+  "eslintConfig": {
+    "root": true,
+    "parserOptions": {
+      "ecmaFeatures": {
+        "globalReturn": false,
+        "impliedStrict": true,
+        "jsx": false
+      },
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+    },
+    "env": {
+      "commonjs": true,
+      "es2020": true,
+      "node": true
+    },
+    "plugins": [
+      "jest"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "standard",
+      "plugin:jest/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "*.spec.js"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
   },
   "jest": {
     "coverageDirectory": "coverage",
