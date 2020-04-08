@@ -4,6 +4,7 @@
   "description": "create-express-app",
   "keywords": [
     "commitizen",
+    "cspell",
     "eslint",
     "express",
     "husky",
@@ -34,6 +35,7 @@
   },
   "lint-staged": {
     "*.js": [
+      "cspell --no-summary",
       "eslint --fix",
       "prettier --write"
     ],
@@ -41,6 +43,7 @@
       "prettier --write"
     ],
     "*.md": [
+      "cspell --no-summary",
       "prettier --write"
     ]
   },
@@ -109,6 +112,7 @@
   },
   "devDependencies": {
     "commitizen": "^4.0.3",
+    "cspell": "^4.0.55",
     "cz-conventional-changelog": "^3.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
