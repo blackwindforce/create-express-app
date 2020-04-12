@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "create-express-app",
   "keywords": [
+    "benchmark",
     "commitizen",
     "cspell",
     "eslint",
@@ -52,44 +53,17 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "prettier": {
-    "arrowParens": "avoid",
-    "bracketSpacing": true,
-    "endOfLine": "lf",
-    "htmlWhitespaceSensitivity": "css",
-    "printWidth": 80,
-    "proseWrap": "preserve",
-    "quoteProps": "as-needed",
-    "semi": false,
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "none",
-    "useTabs": false
-  },
   "eslintConfig": {
     "root": true,
-    "parserOptions": {
-      "ecmaFeatures": {
-        "globalReturn": false,
-        "impliedStrict": true,
-        "jsx": false
-      },
-      "ecmaVersion": 2020,
-      "sourceType": "module"
-    },
     "env": {
-      "commonjs": true,
       "es2020": true,
-      "node": true
+      "jest/globals": false
     },
-    "plugins": [
-      "jest"
-    ],
     "extends": [
       "eslint:recommended",
-      "standard",
-      "plugin:jest/recommended",
-      "plugin:prettier/recommended"
+      "eslint-config-standard",
+      "plugin:eslint-plugin-jest/recommended",
+      "plugin:eslint-plugin-prettier/recommended"
     ],
     "overrides": [
       {
@@ -97,7 +71,7 @@
           "*.spec.js"
         ],
         "env": {
-          "jest": true
+          "jest/globals": true
         }
       }
     ]
@@ -107,10 +81,8 @@
     "restoreMocks": true,
     "testEnvironment": "node"
   },
-  "dependencies": {
-    "express": "^4.17.1"
-  },
   "devDependencies": {
+    "benchmark": "^2.1.4",
     "commitizen": "^4.0.3",
     "cspell": "^4.0.55",
     "cz-conventional-changelog": "^3.1.0",
@@ -126,7 +98,8 @@
     "husky": "^4.2.3",
     "jest": "^25.2.7",
     "lint-staged": "^10.1.1",
-    "prettier": "^2.0.2"
+    "prettier": "^2.0.2",
+    "typescript": "^3.8.3"
   },
   "engines": {
     "node": "12",
