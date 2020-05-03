@@ -82,6 +82,7 @@
     "testEnvironment": "node"
   },
   "devDependencies": {
+    "@types/jest": "^25.2.1",
     "benchmark": "^2.1.4",
     "commitizen": "^4.0.4",
     "cspell": "^4.0.55",
