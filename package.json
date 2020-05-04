@@ -55,6 +55,7 @@
   },
   "eslintConfig": {
     "root": true,
+    "parser": "babel-eslint",
     "env": {
       "es2020": true,
       "jest/globals": false
@@ -83,6 +84,7 @@
   },
   "devDependencies": {
     "@types/jest": "^25.2.1",
+    "babel-eslint": "^10.1.0",
     "benchmark": "^2.1.4",
     "commitizen": "^4.0.4",
     "cspell": "^4.0.55",
