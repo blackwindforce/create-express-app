@@ -25,7 +25,8 @@
   "author": "Akira Tsai",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest",
+    "test:ci": "jest --coverage --passWithNoTests",
     "test:watch": "jest --watch"
   },
   "husky": {
