@@ -2,17 +2,6 @@
   "name": "create-express-app",
   "version": "1.0.0",
   "description": "create-express-app",
-  "keywords": [
-    "benchmark",
-    "commitizen",
-    "cspell",
-    "eslint",
-    "express",
-    "husky",
-    "jest",
-    "lint-staged",
-    "prettier"
-  ],
   "homepage": "https://github.com/blackwindforce/create-express-app#readme",
   "bugs": {
     "url": "https://github.com/blackwindforce/create-express-app/issues"
@@ -22,8 +11,8 @@
     "url": "git+https://github.com/blackwindforce/create-express-app.git"
   },
   "license": "MIT",
-  "author": "Akira Tsai",
-  "main": "src/index.js",
+  "author": "Akira Cai",
+  "main": "index.js",
   "scripts": {
     "test": "jest --coverage --passWithNoTests",
     "test:watch": "jest --watch"
@@ -31,7 +20,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "jest"
+      "pre-push": "npm test"
     }
   },
   "lint-staged": {
