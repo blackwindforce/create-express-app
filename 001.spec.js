@@ -1,6 +1,6 @@
 const { none, some } = require("fp-ts/lib/Option");
 
-const f = require("./001.js");
+const f = require("./001");
 
 it("should return none", () => {
   expect(f("")).toStrictEqual(none);
