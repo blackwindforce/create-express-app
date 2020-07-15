@@ -7,6 +7,6 @@ const { none, some } = require("fp-ts/lib/Option");
  *
  * @param {string} a
  * @returns {import('fp-ts/lib/Option').Option<string>}
- * @see {@link https://dev.to/thepracticaldev/daily-challenge-1-string-peeler-4nep|Daily Challenge #1 - String Peeler - DEV}
+ * @see {@link https://dev.to/thepracticaldev/daily-challenge-1-string-peeler-4nep}
  */
 module.exports = (a) => (a.length <= 2 ? none : some(a.slice(1, -1)));
