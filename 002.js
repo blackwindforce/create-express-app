@@ -1,6 +1,6 @@
 const { map, unfold } = require("fp-ts/lib/Array");
 const { pipe } = require("fp-ts/lib/function");
-const { none, some } = require("fp-ts/lib/Option");
+const { fromPredicate, none, some } = require("fp-ts/lib/Option");
 
 /**
  * Your task is to return a string that displays a diamond shape on the screen
@@ -21,7 +21,7 @@ module.exports = (a) =>
   pipe(
     unfold(a, (b) => (b < 0 || b % 2 === 0 ? none : some([b, b - 2]))),
     (as) => as.slice(1).reverse().concat(as),
-    map((b) => " ".repeat((a - b) / 2).concat("*".repeat(b))),
+    map((b) => " ".repeat((a - b) / 2) + "*".repeat(b)),
     (as) => as.join("\n"),
-    (as) => (as === "" ? none : some(as))
+    fromPredicate((as) => as !== "")
   );
