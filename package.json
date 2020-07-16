@@ -48,7 +48,7 @@
   "eslintConfig": {
     "env": {
       "es2020": true,
-      "jest/globals": false
+      "jest": false
     },
     "parser": "babel-eslint",
     "extends": [
@@ -64,7 +64,7 @@
           "*.spec.js"
         ],
         "env": {
-          "jest/globals": true
+          "jest": true
         }
       }
     ],
