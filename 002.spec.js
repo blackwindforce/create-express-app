@@ -8,7 +8,7 @@ it("should return none", () => {
   expect(f(2)).toStrictEqual(none);
 });
 
-it.skip("should return some", () => {
+it("should return some", () => {
   expect(f(1)).toStrictEqual(some("*"));
   expect(f(3)).toStrictEqual(some(" *\n***\n *"));
   expect(f(5)).toStrictEqual(some("  *\n ***\n*****\n ***\n  *"));

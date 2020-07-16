@@ -1,3 +1,5 @@
+const { map, unfold } = require("fp-ts/lib/Array");
+const { pipe } = require("fp-ts/lib/function");
 const { none, some } = require("fp-ts/lib/Option");
 
 /**
@@ -14,8 +16,12 @@ const { none, some } = require("fp-ts/lib/Option");
  * @param {number} a
  * @returns {import('fp-ts/lib/Option').Option<string>}
  * @see {@link https://dev.to/thepracticaldev/daily-challenge-2-string-diamond-21n2}
- * @example
- *   join "\n" (concat u (reverse tail u))
- *     where u = unfold a
  */
-module.exports = (a) => (a < 0 || a % 2 === 0 ? none : some("*"));
+module.exports = (a) =>
+  pipe(
+    unfold(a, (b) => (b < 0 || b % 2 === 0 ? none : some([b, b - 2]))),
+    (as) => as.slice(1).reverse().concat(as),
+    map((b) => " ".repeat((a - b) / 2).concat("*".repeat(b))),
+    (as) => as.join("\n"),
+    (as) => (as === "" ? none : some(as))
+  );
