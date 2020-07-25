@@ -1,6 +1,5 @@
-const { map, unfold } = require("fp-ts/lib/Array");
-const { pipe } = require("fp-ts/lib/function");
-const { fromPredicate, none, some } = require("fp-ts/lib/Option");
+const { unfold } = require("fp-ts/lib/Array");
+const { none, some } = require("fp-ts/lib/Option");
 
 /**
  * Your task is to return a string that displays a diamond shape on the screen
@@ -14,14 +13,14 @@ const { fromPredicate, none, some } = require("fp-ts/lib/Option");
  * diamond() method and return None (Py) or null(JS) for invalid input.
  *
  * @param {number} a
- * @returns {import('fp-ts/lib/Option').Option<string>}
+ * @returns {?string}
  * @see {@link https://dev.to/thepracticaldev/daily-challenge-2-string-diamond-21n2}
  */
 module.exports = (a) =>
-  pipe(
-    unfold(a, (b) => (b < 0 || b % 2 === 0 ? none : some([b, b - 2]))),
-    (as) => as.slice(1).reverse().concat(as),
-    map((b) => " ".repeat((a - b) / 2) + "*".repeat(b)),
-    (as) => as.join("\n"),
-    fromPredicate((as) => as !== "")
-  );
+  a < 0 || a % 2 === 0
+    ? null
+    : ((r) => r.slice(1).reverse().concat(r).join("\n"))(
+        unfold(a, (b) =>
+          b > 0 ? some([" ".repeat((a - b) / 2) + "*".repeat(b), b - 2]) : none
+        )
+      );
