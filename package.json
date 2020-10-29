@@ -50,7 +50,6 @@
       "es2020": true,
       "jest": false
     },
-    "parser": "babel-eslint",
     "extends": [
       "eslint:recommended",
       "eslint-config-standard",
@@ -86,7 +85,6 @@
   },
   "devDependencies": {
     "@types/jest": "^26.0.15",
-    "babel-eslint": "^10.1.0",
     "commitizen": "^4.2.2",
     "cspell": "^4.1.2",
     "eslint": "^7.11.0",
