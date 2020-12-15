@@ -86,7 +86,7 @@
   "devDependencies": {
     "@types/jest": "^26.0.16",
     "commitizen": "^4.2.2",
-    "cspell": "^4.2.5",
+    "cspell": "^5.0.4",
     "eslint": "^7.15.0",
     "eslint-config-prettier": "^7.0.0",
     "eslint-config-standard": "^16.0.2",
