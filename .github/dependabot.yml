@@ -7,7 +7,3 @@ updates:
     time: "00:00"
     timezone: Asia/Taipei
   open-pull-requests-limit: 99
-  ignore:
-  - dependency-name: fp-ts
-    versions:
-    - 2.10.2
