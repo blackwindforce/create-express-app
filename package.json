@@ -12,90 +12,38 @@
   },
   "license": "MIT",
   "author": "Akira Cai",
-  "scripts": {
-    "test": "jest --coverage",
-    "test:watch": "jest --watch"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm test"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "cspell --no-summary",
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.json": [
-      "prettier --write"
-    ],
-    "*.md": [
-      "cspell --no-summary",
-      "prettier --write"
-    ],
-    "*.ts": [
-      "cspell --no-summary",
-      "eslint --ext .ts --fix",
-      "prettier --write"
-    ],
-    "*.yml": [
-      "cspell --no-summary",
-      "prettier --write"
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
+  "type": "module",
   "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
       "project": "./tsconfig.json"
     },
-    "extends": [
-      "eslint:recommended",
-      "standard-with-typescript",
-      "plugin:prettier/recommended"
+    "plugins": [
+      "@typescript-eslint"
     ],
-    "overrides": [
-      {
-        "files": [
-          "*.spec.js"
-        ],
-        "extends": [
-          "plugin:jest/recommended"
-        ]
-      }
+    "extends": [
+      "airbnb-base",
+      "airbnb-typescript/base",
+      "prettier"
     ],
     "root": true
   },
   "dependencies": {
-    "fp-ts": "^2.11.1",
-    "rxjs": "^7.3.0"
+    "rxjs": "^7.3.1"
   },
   "devDependencies": {
-    "@types/jest": "^27.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.29.0",
-    "commitizen": "^4.2.4",
-    "cspell": "^5.6.6",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
     "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-airbnb-typescript": "^14.0.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-config-standard-with-typescript": "^21.0.1",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jest": "^24.4.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-promise": "^5.1.0",
-    "husky": "^7.0.1",
-    "jest": "^27.0.6",
-    "lint-staged": "^11.1.2",
-    "prettier": "^2.3.2",
-    "typescript": "^4.3.5"
+    "eslint-plugin-import": "^2.24.2",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.3"
   },
   "engines": {
-    "node": "^14.17.4",
-    "npm": "^6.14.14"
+    "node": "^14.17.6",
+    "npm": "^6.14.15"
   }
 }
