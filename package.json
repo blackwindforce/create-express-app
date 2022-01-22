@@ -31,7 +31,10 @@
   },
   "dependencies": {
     "fp-ts": "^2.11.8",
+    "fp-ts-std": "^0.13.1",
     "lodash": "^4.17.21",
+    "monocle-ts": "^2.3.12",
+    "newtype-ts": "^0.3.5",
     "ramda": "^0.28.0",
     "rxjs": "^7.5.2"
   },
