@@ -13,7 +13,7 @@
   "license": "MIT",
   "author": "Akira Cai",
   "scripts": {
-    "test": "nodemon index.ts"
+    "start": "nodemon index.ts"
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
