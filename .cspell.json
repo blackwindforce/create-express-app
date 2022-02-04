@@ -1,0 +1,15 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": ["akira", "monoid", "newtype"],
+  "dictionaries": [
+    "en_US",
+    "companies",
+    "softwareTerms",
+    "misc",
+    "typescript",
+    "node",
+    "filetypes",
+    "npm"
+  ]
+}
