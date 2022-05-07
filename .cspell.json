@@ -1,12 +1,7 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": [
-    "akira",
-    "monoid",
-    "newtype",
-    "semigroup"
-  ],
+  "words": ["akira", "monoid", "semigroup"],
   "dictionaries": [
     "en_US",
     "companies",
