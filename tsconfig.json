@@ -1,1 +1,3 @@
-{ "extends": "ts-node/node14/tsconfig.json" }
+{
+  "extends": "ts-node/node14/tsconfig.json"
+}
