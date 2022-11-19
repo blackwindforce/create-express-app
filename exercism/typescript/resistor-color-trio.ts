@@ -1,21 +1,23 @@
-type COLOR = keyof typeof COLORS;
+type Color = keyof typeof Colors;
 
-const COLORS = {
-  black: 0,
-  brown: 1,
-  red: 2,
-  orange: 3,
-  yellow: 4,
-  green: 5,
-  blue: 6,
-  violet: 7,
-  grey: 8,
-  white: 9,
-} as const;
+enum Colors {
+  black,
+  brown,
+  red,
+  orange,
+  yellow,
+  green,
+  blue,
+  violet,
+  grey,
+  white,
+}
 
-export const decodedResistorValue = ([a, b, c]: COLOR[]):
-  | `${number} ohms`
-  | `${number} kiloohms` =>
-  ((ohms) => (ohms >= 1000 ? `${ohms / 1000} kiloohms` : `${ohms} ohms`))(
-    (COLORS[a] * 10 + COLORS[b]) * 10 ** COLORS[c]
+export const decodedResistorValue = ([a, b, c]: [
+  Color,
+  Color,
+  Color
+]): string =>
+  ((d) => (d >= 1000 ? `${d / 1000} kiloohms` : `${d} ohms`))(
+    (10 * Colors[a] + Colors[b]) * 10 ** Colors[c]
   );

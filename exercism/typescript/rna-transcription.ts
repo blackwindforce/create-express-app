@@ -1,12 +1,10 @@
-const rnaByDna = { A: "U", C: "G", G: "C", T: "A" } as const;
+type Dna = keyof typeof RnaByDna;
 
-const assertDna: (dna: string) => asserts dna is keyof typeof rnaByDna = (
-  dna
-) => {
-  if (!(dna in rnaByDna)) {
-    throw new Error("Invalid input DNA.");
-  }
+const RnaByDna = { A: "U", C: "G", G: "C", T: "A" };
+
+const assertDna = (dna: string): asserts dna is Dna => {
+  if (!Object.hasOwn(RnaByDna, dna)) throw new Error("Invalid input DNA.");
 };
 
-export const toRna = (dnas: string): string | never =>
-  dnas.replace(/[A-Z]/g, (dna) => (assertDna(dna), rnaByDna[dna]));
+export const toRna = (dna: string): string | never =>
+  dna.replace(/[A-Z]/g, (dna) => (assertDna(dna), RnaByDna[dna]));

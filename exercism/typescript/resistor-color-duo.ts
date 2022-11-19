@@ -1,17 +1,17 @@
-type COLOR = keyof typeof COLORS;
+type Color = keyof typeof Colors;
 
-const COLORS = {
-  black: 0,
-  brown: 1,
-  red: 2,
-  orange: 3,
-  yellow: 4,
-  green: 5,
-  blue: 6,
-  violet: 7,
-  grey: 8,
-  white: 9,
-} as const;
+enum Colors {
+  black,
+  brown,
+  red,
+  orange,
+  yellow,
+  green,
+  blue,
+  violet,
+  grey,
+  white,
+}
 
-export const decodedValue = ([a, b]: COLOR[]): number =>
-  COLORS[a] * 10 + COLORS[b];
+export const decodedValue = ([a, b]: [Color, Color, ...Color[]]): number =>
+  10 * Colors[a] + Colors[b];
