@@ -2,8 +2,7 @@
   "name": "create-express-app",
   "version": "1.0.0",
   "scripts": {
-    "start": "nodemon index.ts",
-    "test": "vitest"
+    "start": "nodemon index.ts"
   },
   "devDependencies": {
     "@types/node": "^16.18.3",
@@ -11,15 +10,10 @@
     "@typescript-eslint/parser": "^5.44.0",
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-import-resolver-typescript": "^3.5.2",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.5.1",
     "nodemon": "^2.0.20",
     "prettier": "^2.8.0",
     "ts-node": "^10.9.1",
-    "tsutils": "^3.21.0",
-    "typescript": "^4.9.3",
-    "vitest": "^0.25.3"
+    "typescript": "^4.9.3"
   },
   "engines": {
     "node": "^16.18.1",
