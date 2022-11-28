@@ -2,7 +2,7 @@
   "name": "create-express-app",
   "version": "1.0.0",
   "scripts": {
-    "start": "nodemon index.ts"
+    "start": "nodemon src/main.ts"
   },
   "devDependencies": {
     "@types/node": "^16.18.3",
