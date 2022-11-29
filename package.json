@@ -1,13 +1,14 @@
 {
   "name": "create-express-app",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "start": "nodemon src/main.ts"
   },
   "devDependencies": {
     "@types/node": "^16.18.3",
-    "@typescript-eslint/eslint-plugin": "^5.44.0",
-    "@typescript-eslint/parser": "^5.44.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "nodemon": "^2.0.20",
