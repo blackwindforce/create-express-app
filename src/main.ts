@@ -1,5 +1,3 @@
-// cspell:ignore RNEA SRTE
-
 import * as C from "node:crypto";
 
 //
