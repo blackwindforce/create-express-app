@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+  display: grid;
+  height: 648px;
+  margin: 0;
+  width: 648px;
+}
+
+img {
+  align-self: center;
+  justify-self: center;
+  width: calc(100% / 1.61803398875);
+}
