@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "lint": "cspell src && eslint src && prettier --check ."
+    "build": "tsc",
+    "lint": "cspell src && eslint src && prettier --check .",
+    "test": "node dist/main.js"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
