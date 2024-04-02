@@ -7,6 +7,9 @@
     "lint": "cspell src && eslint src && prettier --check .",
     "test": "node dist/main.js"
   },
+  "dependencies": {
+    "fp-ts": "^2.16.5"
+  },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
     "@tsconfig/strictest": "^2.0.5",
@@ -16,7 +19,6 @@
     "cspell": "^8.6.1",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
-    "fp-ts": "^2.16.5",
     "prettier": "^3.2.5",
     "typescript": "^5.4.3"
   },
