@@ -1,14 +1,11 @@
-import type { UUID } from "node:crypto";
-import { randomInt, randomUUID } from "node:crypto";
+import { randomInt, randomUUID, type UUID } from "node:crypto";
 
-import * as E from "fp-ts/lib/Either.js";
-import type { ReaderTaskEither } from "fp-ts/lib/ReaderTaskEither.js";
-import * as RTE from "fp-ts/lib/ReaderTaskEither.js";
-import * as RA from "fp-ts/lib/ReadonlyArray.js";
-import type { StateReaderTaskEither } from "fp-ts/lib/StateReaderTaskEither.js";
-import * as SRTE from "fp-ts/lib/StateReaderTaskEither.js";
-import * as TE from "fp-ts/lib/TaskEither.js";
-import { flow, identity, pipe } from "fp-ts/lib/function.js";
+import * as E from "fp-ts/Either";
+import * as RTE from "fp-ts/es6/ReaderTaskEither.js";
+import * as RA from "fp-ts/es6/ReadonlyArray.js";
+import * as SRTE from "fp-ts/es6/StateReaderTaskEither.js";
+import * as TE from "fp-ts/es6/TaskEither.js";
+import { flow, identity, pipe } from "fp-ts/es6/function.js";
 
 type S = Readonly<Record<string, unknown>>;
 type R = Readonly<{ repository: typeof repository; service: typeof service }>;
@@ -23,7 +20,7 @@ const repository = {
 };
 
 const service = {
-  query: (): ReaderTaskEither<R, E, A> =>
+  query: (): RTE.ReaderTaskEither<R, E, A> =>
     pipe(
       RTE.ask<R>(),
       RTE.chainTaskEitherK((r) =>
@@ -33,7 +30,7 @@ const service = {
 };
 
 const controller = {
-  list: (): StateReaderTaskEither<S, R, E, A> =>
+  list: (): SRTE.StateReaderTaskEither<S, R, E, A> =>
     pipe(
       SRTE.ask<S, R>(),
       SRTE.chainReaderTaskEitherK((r) => r.service.query()),

@@ -1,13 +1,13 @@
 {
-  "extends": [
-    "@tsconfig/node20/tsconfig.json",
-    "@tsconfig/strictest/tsconfig.json"
-  ],
   "compilerOptions": {
     "checkJs": false,
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist",
     "verbatimModuleSyntax": true
   },
+  "extends": [
+    "@tsconfig/node20/tsconfig.json",
+    "@tsconfig/strictest/tsconfig.json"
+  ],
   "include": ["src/**/*.mts"]
 }

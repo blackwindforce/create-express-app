@@ -1,5 +1,4 @@
 {
-  "words": ["SRTE"],
   "dictionaries": [
     "companies",
     "en_US",
@@ -8,6 +7,10 @@
     "node",
     "npm",
     "softwareTerms",
-    "typescript"
-  ]
+    "typescript",
+    "html"
+  ],
+  "ignorePaths": ["LICENSE"],
+  "useGitignore": true,
+  "words": ["SRTE"]
 }

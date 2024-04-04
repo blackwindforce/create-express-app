@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "lint": "cspell src && eslint src && prettier --check .",
-    "test": "node dist/main.js"
+    "lint": "cspell . && eslint . && prettier --check .",
+    "test": "node dist/main.mjs"
   },
   "dependencies": {
     "fp-ts": "^2.16.5"
