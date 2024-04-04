@@ -1,11 +1,11 @@
 import { randomInt, randomUUID, type UUID } from "node:crypto";
 
-import * as E from "fp-ts/Either";
-import * as RTE from "fp-ts/es6/ReaderTaskEither.js";
-import * as RA from "fp-ts/es6/ReadonlyArray.js";
-import * as SRTE from "fp-ts/es6/StateReaderTaskEither.js";
-import * as TE from "fp-ts/es6/TaskEither.js";
-import { flow, identity, pipe } from "fp-ts/es6/function.js";
+import * as E from "fp-ts/lib/Either.js";
+import * as RTE from "fp-ts/lib/ReaderTaskEither.js";
+import * as RA from "fp-ts/lib/ReadonlyArray.js";
+import * as SRTE from "fp-ts/lib/StateReaderTaskEither.js";
+import * as TE from "fp-ts/lib/TaskEither.js";
+import { flow, identity, pipe } from "fp-ts/lib/function.js";
 
 type S = Readonly<Record<string, unknown>>;
 type R = Readonly<{ repository: typeof repository; service: typeof service }>;
