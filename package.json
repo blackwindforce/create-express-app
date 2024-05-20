@@ -8,7 +8,7 @@
     "test": "node dist/main.mjs"
   },
   "dependencies": {
-    "fp-ts": "^2.16.5"
+    "fp-ts": "^2.16.6"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
