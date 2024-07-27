@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "cspell . && eslint . && prettier --check .",
-    "test": "node dist/main.mjs"
+    "test": "node dist/src/main.mjs"
   },
   "dependencies": {
     "fp-ts": "^2.16.9"
