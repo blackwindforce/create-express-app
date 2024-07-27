@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "checkJs": false,
+    "allowJs": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist",
     "verbatimModuleSyntax": true
@@ -9,5 +9,5 @@
     "@tsconfig/node20/tsconfig.json",
     "@tsconfig/strictest/tsconfig.json"
   ],
-  "include": ["src/**/*.mts"]
+  "include": ["src/**/*.mts", "eslint.config.mjs"]
 }
