@@ -10,7 +10,7 @@ import { flow, identity, pipe } from "fp-ts/lib/function.js";
 type S = Readonly<Record<string, unknown>>;
 type R = Readonly<{ repository: typeof repository; service: typeof service }>;
 type E = unknown;
-type A = ReadonlyArray<Readonly<{ id: UUID }>>;
+type A = readonly Readonly<{ id: UUID }>[];
 
 const repository = {
   select: () =>
