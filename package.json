@@ -7,25 +7,22 @@
     "lint": "cspell . && eslint . && prettier --check .",
     "test": "node dist/src/main.mjs"
   },
-  "dependencies": {
-    "fp-ts": "^2.16.9"
-  },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
-    "@tsconfig/node20": "^20.1.4",
+    "@tsconfig/node22": "^22.0.0",
     "@tsconfig/strictest": "^2.0.5",
     "@types/eslint__js": "^8.42.3",
     "@types/eslint-config-prettier": "^6.11.3",
-    "@types/node": "^22.9.1",
+    "@types/node": "^22.9.3",
     "cspell": "^8.16.0",
     "eslint": "^9.15.0",
     "eslint-config-prettier": "^9.1.0",
     "prettier": "^3.3.3",
-    "typescript": "^5.6.3",
+    "typescript": "^5.7.2",
     "typescript-eslint": "^8.15.0"
   },
   "engines": {
-    "node": "^20.9.0",
-    "npm": "^10.1.0"
+    "node": "^22.11.0",
+    "npm": "^10.3.0"
   }
 }

@@ -1,13 +1,7 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "forceConsistentCasingInFileNames": true,
-    "outDir": "dist",
-    "verbatimModuleSyntax": true
+    "outDir": "dist"
   },
-  "extends": [
-    "@tsconfig/node20/tsconfig.json",
-    "@tsconfig/strictest/tsconfig.json"
-  ],
-  "include": ["src/**/*.mts", "eslint.config.mjs"]
+  "extends": ["./tsconfig.base.json"],
+  "include": ["src/**/*.mts"]
 }
