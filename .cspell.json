@@ -1,16 +1,5 @@
 {
-  "dictionaries": [
-    "companies",
-    "en_US",
-    "filetypes",
-    "misc",
-    "node",
-    "npm",
-    "softwareTerms",
-    "typescript",
-    "html"
-  ],
-  "ignorePaths": ["LICENSE"],
-  "useGitignore": true,
-  "words": ["SRTE"]
+  "dictionaries": ["html"],
+  "ignoreWords": ["Akira"],
+  "useGitignore": true
 }
