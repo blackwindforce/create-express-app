@@ -15,7 +15,7 @@
     "@types/eslint-config-prettier": "^6.11.3",
     "@types/node": "^22.13.9",
     "cspell": "^8.17.5",
-    "eslint": "^9.21.0",
+    "eslint": "^9.22.0",
     "eslint-config-prettier": "^10.1.1",
     "prettier": "^3.5.3",
     "typescript": "^5.8.2",
