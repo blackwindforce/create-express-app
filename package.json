@@ -13,7 +13,7 @@
     "@tsconfig/strictest": "^2.0.5",
     "@types/eslint-config-prettier": "^6.11.3",
     "@types/node": "^22.14.1",
-    "cspell": "^8.19.0",
+    "cspell": "^8.19.2",
     "eslint": "^9.24.0",
     "eslint-config-prettier": "^10.1.2",
     "prettier": "^3.5.3",
