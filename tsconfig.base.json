@@ -2,7 +2,7 @@
   "compilerOptions": {
     "noImplicitAny": true,
     "noImplicitThis": true,
-    "rootDir": ".",
+    "rootDir": "./",
     "strictBindCallApply": true,
     "strictBuiltinIteratorReturn": true,
     "strictFunctionTypes": true,
