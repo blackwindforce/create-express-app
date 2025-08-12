@@ -5,7 +5,8 @@ import typescript from "typescript-eslint";
 export default typescript.config(
   { ignores: ["dist"] },
   eslint.configs.recommended,
-  ...typescript.configs.stylisticTypeChecked,
+  typescript.configs.strictTypeChecked,
+  typescript.configs.stylisticTypeChecked,
   prettier,
   {
     languageOptions: {
