@@ -12,7 +12,7 @@ export default typescript.config(
     languageOptions: {
       parserOptions: {
         ecmaVersion: 2026,
-        project: ["tsconfig.json", "tsconfig.eslint.json"],
+        projectService: { allowDefaultProject: ["*.mjs"] },
         tsconfigRootDir: import.meta.dirname,
       },
     },
