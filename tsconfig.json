@@ -1,15 +1,7 @@
 {
   "compilerOptions": {
-    "noImplicitAny": true,
-    "noImplicitThis": true,
     "outDir": "./dist",
     "rootDir": "./",
-    "strictBindCallApply": true,
-    "strictBuiltinIteratorReturn": true,
-    "strictFunctionTypes": true,
-    "strictNullChecks": true,
-    "strictPropertyInitialization": true,
-    "useUnknownInCatchVariables": true,
     "verbatimModuleSyntax": true
   },
   "extends": [
