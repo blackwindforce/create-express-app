@@ -12,7 +12,7 @@
     "verbatimModuleSyntax": true
   },
   "extends": [
-    "@tsconfig/node22/tsconfig.json",
+    "@tsconfig/node24/tsconfig.json",
     "@tsconfig/strictest/tsconfig.json"
   ]
 }
