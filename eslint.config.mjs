@@ -1,8 +1,9 @@
 import eslint from "@eslint/js";
 import prettier from "eslint-config-prettier";
+import { defineConfig } from "eslint/config";
 import typescript from "typescript-eslint";
 
-export default typescript.config(
+export default defineConfig(
   { ignores: ["dist"] },
   eslint.configs.recommended,
   typescript.configs.strictTypeChecked,
