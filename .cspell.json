@@ -1,5 +1,1 @@
-{
-  "dictionaries": ["html"],
-  "ignoreWords": ["Akira"],
-  "useGitignore": true
-}
+{ "dictionaries": ["html"], "ignoreWords": ["Akira"] }
