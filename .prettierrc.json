@@ -5,7 +5,7 @@
   "embeddedLanguageFormatting": "auto",
   "endOfLine": "lf",
   "htmlWhitespaceSensitivity": "strict",
-  "objectWrap": "preserve",
+  "objectWrap": "collapse",
   "printWidth": 80,
   "proseWrap": "always",
   "quoteProps": "as-needed",
