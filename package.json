@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "lint": "cspell . && eslint . && prettier --check .",
+    "lint": "cspell . && eslint . && prettier --check . && tsc",
     "test": "node ./src/main.ts"
   },
   "devDependencies": {
