@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "lint": "cspell . && eslint . && prettier --check ."
+    "lint": "cspell . && eslint . && prettier --check .",
+    "test": "node ./src/main.ts"
   },
   "devDependencies": {
     "@eslint/js": "^9.24.0",
