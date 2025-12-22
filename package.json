@@ -3,16 +3,13 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "tsc",
-    "lint": "cspell . && eslint . && prettier --check .",
-    "test": "node dist/src/main.mjs"
+    "lint": "cspell . && eslint . && prettier --check ."
   },
   "devDependencies": {
     "@eslint/js": "^9.24.0",
     "@tsconfig/node24": "^24.0.3",
     "@tsconfig/strictest": "^2.0.8",
-    "@types/eslint-config-prettier": "^6.11.3",
-    "@types/node": "^24.10.2",
+    "@types/node": "^24.10.4",
     "cspell": "^9.4.0",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
@@ -21,7 +18,7 @@
     "typescript-eslint": "^8.50.0"
   },
   "engines": {
-    "node": "^24.5.0",
-    "npm": "^11.5.1"
+    "node": "^24.12.0",
+    "npm": "^11.6.2"
   }
 }

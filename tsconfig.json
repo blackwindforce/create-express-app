@@ -1,12 +1,22 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
-    "rootDir": "./",
+    "composite": true,
+    "erasableSyntaxOnly": true,
+    "lib": [
+      "ES2024",
+      "ESNext.Array",
+      "ESNext.Collection",
+      "ESNext.Error",
+      "ESNext.Iterator",
+      "ESNext.Promise"
+    ],
+    "noEmit": true,
+    "noUncheckedSideEffectImports": true,
     "verbatimModuleSyntax": true
   },
   "extends": [
     "@tsconfig/node24/tsconfig.json",
     "@tsconfig/strictest/tsconfig.json"
   ],
-  "include": ["./src/**/*.mts"]
+  "include": ["./src/**/*.ts"]
 }
