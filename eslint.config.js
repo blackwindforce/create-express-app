@@ -5,9 +5,9 @@ import typescript from "typescript-eslint";
 
 export default defineConfig(
   eslint.configs.recommended,
+
   typescript.configs.strictTypeChecked,
   typescript.configs.stylisticTypeChecked,
-  prettier,
   {
     languageOptions: {
       parserOptions: {
@@ -16,4 +16,6 @@ export default defineConfig(
       },
     },
   },
+
+  prettier,
 );
