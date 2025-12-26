@@ -16,5 +16,5 @@
     "@tsconfig/strictest/tsconfig.json",
     "@tsconfig/node-ts/tsconfig.json"
   ],
-  "include": ["./src/**/*.ts"]
+  "include": ["src/**/*.ts"]
 }
