@@ -11,7 +11,6 @@ export default defineConfig(
   {
     languageOptions: {
       parserOptions: {
-        ecmaVersion: 2026,
         projectService: { allowDefaultProject: ["*.js"] },
         tsconfigRootDir: import.meta.dirname,
       },
