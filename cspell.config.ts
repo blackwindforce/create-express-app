@@ -1,8 +1,7 @@
 import { defineConfig } from "cspell";
 
 export default defineConfig({
-  dictionaries: ["html"],
+  dictionaries: ["en-gb", "html"],
   files: ["**"],
-  ignoreWords: ["Akira"],
   useGitignore: true,
 });
