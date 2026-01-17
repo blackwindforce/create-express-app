@@ -1,13 +1,18 @@
+:root {
+  --golden-ratio: calc((1 + sqrt(5)) / 2);
+  --image-size: 648px;
+}
+
 body {
   background-color: #000;
   display: grid;
-  height: 648px;
+  height: var(--image-size);
   margin: 0;
-  width: 648px;
+  width: var(--image-size);
 }
 
 img {
   align-self: center;
   justify-self: center;
-  width: calc(100% / 1.61803398875);
+  width: calc(100% / var(--golden-ratio));
 }
