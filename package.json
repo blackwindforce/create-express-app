@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.24.0",
-    "@tsconfig/node-ts": "^23.6.2",
+    "@tsconfig/node-ts": "^23.6.3",
     "@tsconfig/node24": "^24.0.4",
     "@tsconfig/strictest": "^2.0.8",
     "@types/node": "^24.10.9",
