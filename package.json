@@ -4,9 +4,9 @@
   "type": "module",
   "scripts": {
     "format": "prettier --write .",
-    "lint": "cspell && eslint --flag unstable_native_nodejs_ts_config && prettier --check . && tsc",
+    "lint": "cspell && eslint --concurrency auto --flag unstable_native_nodejs_ts_config && prettier --check . && tsc",
     "lint:fix": "eslint --fix --flag unstable_native_nodejs_ts_config",
-    "test": "node src/main.ts"
+    "test": "node --experimental-test-coverage --test"
   },
   "devDependencies": {
     "@eslint/js": "^9.24.0",
