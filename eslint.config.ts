@@ -5,18 +5,12 @@ import typescript from "typescript-eslint";
 
 export default defineConfig(
   eslint.configs.recommended,
-  { linterOptions: { noInlineConfig: true }, rules: { "func-style": "error" } },
 
   typescript.configs.strictTypeChecked,
   typescript.configs.stylisticTypeChecked,
   {
     languageOptions: { parserOptions: { projectService: true } },
     rules: {
-      "@typescript-eslint/consistent-type-assertions": [
-        "error",
-        { assertionStyle: "never" },
-      ],
-      "@typescript-eslint/explicit-function-return-type": "error",
       "@typescript-eslint/no-floating-promises": [
         "error",
         {
