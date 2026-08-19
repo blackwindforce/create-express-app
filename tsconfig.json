@@ -7,8 +7,7 @@
       "ESNext.Error",
       "ESNext.Intl"
     ],
-    "noEmit": true,
-    "types": ["node"]
+    "noEmit": true
   },
   "extends": [
     "@tsconfig/node-ts/tsconfig.json",
