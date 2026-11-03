@@ -4,19 +4,15 @@
   "type": "module",
   "scripts": {
     "format": "prettier --write .",
-    "lint": "cspell && eslint --concurrency auto --flag unstable_native_nodejs_ts_config && prettier --check . && tsc",
-    "lint:fix": "eslint --fix --flag unstable_native_nodejs_ts_config",
+    "lint": "cspell && prettier --check . && tsc",
     "test": "node --experimental-test-coverage --test"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
     "@tsconfig/node-ts": "^23.6.4",
     "@tsconfig/node26": "^26.0.1",
     "@tsconfig/strictest": "^2.0.8",
     "@types/node": "^26.6.6",
     "cspell": "^10.4.0",
-    "eslint": "^10.14.0",
-    "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.9.10",
     "typescript": "^7.0.2"
   },
