@@ -3,6 +3,8 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "streetsidesoftware.code-spell-checker",
-    "yoavbls.pretty-ts-errors"
+    "typescriptteam.native-preview",
+    "yoavbls.pretty-ts-errors",
+    "yzhang.markdown-all-in-one"
   ]
 }
