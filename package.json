@@ -8,7 +8,7 @@
     "test": "node --experimental-test-coverage --test"
   },
   "devDependencies": {
-    "@tsconfig/node-ts": "^23.6.4",
+    "@tsconfig/node-ts": "^23.6.5",
     "@tsconfig/node26": "^26.0.1",
     "@tsconfig/strictest": "^2.0.8",
     "@types/node": "^26.6.6",
